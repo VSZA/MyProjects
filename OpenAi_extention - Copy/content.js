@@ -3,7 +3,7 @@ const divs = document.querySelectorAll("div.formulation.clearfix");
 const spans = document.querySelectorAll("span.qno");
 const texts = [];
 const qnos=[]
-const apiKey = "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"
+const apiKey = ""
 
 divs.forEach(div => {
   texts.push(div.textContent);
@@ -59,13 +59,7 @@ async function main() {
     try {
       await callAPI(texts[i], apiKey, i);
     } catch (error) {
-      try {
-        await callAPI(texts[i], apiKey, i);
-      }
-      catch(error){
-        console.error(error);
-      }
-
+      console.error(error);
     }
   }
 }
