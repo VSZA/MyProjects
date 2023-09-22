@@ -3,7 +3,7 @@ const divs = document.querySelectorAll("div.formulation.clearfix");
 const spans = document.querySelectorAll("span.qno");
 const texts = [];
 const qnos=[]
-const apiKey = "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"
+const apiKey = "***************************************"
 
 divs.forEach(div => {
   texts.push(div.textContent);
